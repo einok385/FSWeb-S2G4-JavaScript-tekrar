@@ -99,8 +99,15 @@ let ucetambolunenler,
   tekraredensayilar;
 
 // 3a çözümü
-
-/* kodlar buraya */
+const enbuyukveenkucuk = {
+  forEach : sayilar.forEach(sayi =>{
+  if(sayi > enbuyuk)
+    enbuyuk = sayi;
+  if(saayi < enkucuk)
+    enkucuk=sayi;
+ return enbuyukveenkucuk;
+} )
+} ;
 
 // 3b çözümü:
 
