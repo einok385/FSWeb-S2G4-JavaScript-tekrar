@@ -103,15 +103,18 @@ const enbuyukveenkucuk = {
   forEach : sayilar.forEach(sayi =>{
   if(sayi > enbuyuk)
     enbuyuk = sayi;
-  if(saayi < enkucuk)
+  if(sayi < enkucuk)
     enkucuk=sayi;
  return enbuyukveenkucuk;
 } )
 } ;
 
 // 3b çözümü:
-
-/* kodlar buraya */
+ ucetambolunenler =[];
+ sayilar.forEach(sayi => {
+  if(sayi % 3 === 0)
+    ucetambolunenler.push(sayi);
+ })
 
 // 3c çözümü:
 
