@@ -125,14 +125,28 @@ ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi
 besyuzdenkucuksayilar = sayilar.filter(sayi => sayi < 500);
 
 // 3e çözümü
-
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
 
 // 3f çözümü
+tekraredensayilar =[];
+const tekrarsayilari = {};
+sayilar.forEach(sayi => {
+  if(tekraredensayilar.includes(sayi)){
+    tekrarsayilari[sayi] = (tekrarsayilari[sayi] || 1) + 1;
+  } else {
+    tekraredensayilar.push(sayi);
+    tekraredensayilar[sayi] = 1;
+  }
+  }
+);
+tekraredensayilar.forEach((sayi) => {
+  if (tekraredensayilar[sayi] > 1){
+    tekraredensayilar.push(`${sayi} sayısı ${tekraredensayilar[sayi]} kere tekrar edilmiştir`);
+  }
+  });
 
-/* kodlar buraya */
 
-/*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
+/*  Bu satırın aşağısındaki kodları lütfen değiştirmeyiniz.  */
 
 function sa() {
   console.log("Kodlar çalışıyor");
