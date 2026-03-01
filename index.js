@@ -117,12 +117,12 @@ const enbuyukveenkucuk = {
  })
 
 // 3c çözümü:
+ucebolunenlerintoplami = ucetambolunenler.reduce((toplam, sayi) => toplam + sayi, 0);
 
-/* kodlar buraya */
 
 // 3d çözümü
 
-/* kodlar buraya */
+besyuzdenkucuksayilar = sayilar.filter(sayi => sayi < 500);
 
 // 3e çözümü
 
